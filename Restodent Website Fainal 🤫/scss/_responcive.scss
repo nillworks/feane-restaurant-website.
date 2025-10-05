@@ -1,0 +1,123 @@
+@use 'utilities' as *;
+
+// **********************************************
+// responcive area mobile
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+  // Header AREA
+  #header_area {
+    height: 650px;
+    overflow: hidden;
+    .top_header_area {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      backdrop-filter: none;
+      .mobill_bars {
+        display: block;
+        i {
+          background: linear-gradient(55deg, #fff, #20bf6b, #3867d6, #fd9644);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: animated 2.5s linear infinite;
+          background-size: 200% auto;
+          background-position: 0%;
+          transition: 0.9s all;
+          font: {
+            size: 35px;
+            weight: $fontWeight700;
+          }
+          cursor: pointer;
+        }
+      }
+      .socil_area2 {
+        display: none;
+      }
+    }
+    // Hero area Responcive
+    #hero_header_area {
+      position: relative;
+      .Left_area {
+        width: 96%;
+        flex-basis: 100%;
+        padding: 10px 0;
+        h2 {
+          margin-bottom: 0px;
+          font: {
+            size: 36px;
+          }
+        }
+        p {
+          font: {
+            size: 14px;
+          }
+        }
+      }
+    }
+  }
+  // Manu area Responcive area
+  #manu_area {
+    .container_manu {
+      width: 100%;
+      padding: 0 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .child_manu {
+      flex: 0 0 100%;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 20px;
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  // About area responcive
+
+  #about_area {
+    .inner {
+      flex-direction: column;
+    }
+    .about_img {
+      order: 1;
+      flex-basis: 50%;
+    }
+    .about_detelss {
+      order: 0;
+      flex-basis: 50%;
+    }
+  }
+
+  // Book Table area responcive
+  #book_table_area {
+    .inner {
+      flex-direction: column;
+    }
+    .form_area {
+      order: 1;
+      flex-basis: 100%;
+      margin-bottom: 18px;
+    }
+    .iframe_area {
+      order: 0;
+      flex-basis: 100%;
+    }
+  }
+
+  // Footer Area Responcive
+  #footer_area {
+    .inner {
+      flex-direction: column;
+    }
+  }
+}

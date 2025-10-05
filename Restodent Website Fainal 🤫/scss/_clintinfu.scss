@@ -1,0 +1,27 @@
+// Utilities
+@use 'utilities' as *;
+// ****************************************************
+
+// Clint area styel
+#clint_ingu {
+  .details_area {
+    padding: 30px;
+    background: $whiteColor;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $pmairyColor;
+    p {
+      width: 96%;
+    }
+    h4 {
+      margin-top: 20px;
+      text-align: left;
+      font: {
+        size: 32px;
+      }
+    }
+  }
+}

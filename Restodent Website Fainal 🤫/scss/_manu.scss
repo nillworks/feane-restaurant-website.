@@ -1,0 +1,66 @@
+@use 'utilities' as *;
+// ****************************************
+
+// Manu Area Style
+
+#manu_area {
+  margin: 50px 0;
+  .container_manu {
+    background: $whiteColor;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    .child_manu {
+      margin-right: 10px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 50%;
+      border-radius: 10px;
+      background: $pmairyColor;
+      .img {
+        img {
+          border: 5px solid #ffbe33;
+          border-radius: 50%;
+          width: 150px;
+          min-width: 100%;
+          height: auto;
+          margin-right: 15px;
+          position: relative;
+          transition: all 0.1 0.5s;
+          transition: 0.9s;
+          overflow: hidden;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+      .text_manu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        h2 {
+          color: $whiteColor;
+          font: {
+            size: 25px;
+          }
+        }
+        h4 {
+          margin-bottom: 20px;
+          color: $whiteColor;
+          font: {
+            size: 35px;
+          }
+          span {
+            font: {
+              size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+// Utilities
+@use 'utilities' as *;
+
+// Header Area
+@use 'header';
+
+// Manu Area
+@use 'manu';
+
+// Content Area
+@use 'content';
+
+// About Area
+@use 'about';
+
+// Book Table area
+@use 'booktable';
+
+// Clint infu area
+@use 'clintinfu';
+
+//Footer area
+@use 'footer';
+
+// Responcive Area
+@use 'responcive';

@@ -1,0 +1,112 @@
+@use 'utilities';
+// hero Area Style
+
+#header_area {
+  // Top Header Area Style
+  background-image: url(../img/hero-bg.jpg);
+  background-size: cover;
+  height: 1080px;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  .top_header_area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding-top: 20px;
+    padding: 25px 50px;
+    background: transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(50px);
+    .logo {
+      flex-basis: 30%;
+      h2 {
+        background: linear-gradient(90deg, #be2edd, #20bf6b, #3867d6, #fd9644);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animated 2.5s linear infinite;
+        background-size: 200% auto;
+        background-position: 0%;
+        transition: 0.5s all;
+        color: utilities.$whiteColor;
+        @keyframes animated {
+          from {
+            background-position: 0% 50%;
+          }
+          to {
+            background-position: 200% 50%;
+          }
+        }
+        font: {
+          size: 32px;
+        }
+      }
+    }
+    #navigation_manu {
+      flex-basis: 50%;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: end;
+        column-gap: 1.8em;
+        li {
+          margin: 0;
+          .text {
+            color: utilities.$srcDarkColor;
+          }
+          a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #3ae374;
+            &:hover {
+              color: utilities.$srcDarkColor;
+            }
+          }
+        }
+      }
+    }
+    .socil_area2 {
+      flex-basis: 20%;
+      display: flex;
+      justify-content: end;
+      gap: 10px;
+      i {
+        color: #3867d6;
+        &:hover {
+          color: utilities.$srcDarkColor;
+        }
+      }
+    }
+    .mobill_bars {
+      display: none;
+    }
+  }
+
+  // Hero Header Area Style
+  #hero_header_area {
+    position: relative;
+    .Left_area {
+      z-index: 99;
+      width: 29%;
+      flex-basis: 100%;
+      position: absolute;
+      top: 240px;
+      left: auto;
+      h2 {
+        color: utilities.$whiteColor;
+        font: {
+          size: 53px;
+        }
+      }
+      p {
+        color: utilities.$whiteColor;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
